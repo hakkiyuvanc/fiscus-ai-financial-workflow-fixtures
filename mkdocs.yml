@@ -1,0 +1,18 @@
+site_name: FISCUS AI Financial Workflow State Fixtures
+site_description: Synthetic reference fixtures for auditable, human-in-the-loop finance automation.
+site_url: !ENV READTHEDOCS_CANONICAL_URL
+repo_url: https://github.com/hakkiyuvanc/fiscus-ai-financial-workflow-fixtures
+repo_name: hakkiyuvanc/fiscus-ai-financial-workflow-fixtures
+
+theme:
+  name: readthedocs
+
+nav:
+  - Overview: index.md
+  - State model: state-model.md
+  - Responsible use: responsible-use.md
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
