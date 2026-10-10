@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Twenty-five synthetic fixtures for auditable, human-in-the-loop finance automation by FISCUS AI.">
+  <link rel="canonical" href="https://hakkiyuvanc.github.io/fiscus-ai-financial-workflow-fixtures/">
+  <title>FISCUS AI Financial Workflow State Fixtures</title>
+  <style>
+    :root { color-scheme: light; --ink: #172033; --muted: #536078; --line: #dce2ec; --accent: #175cd3; --soft: #f4f7fb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 17px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: #fff; }
+    main { width: min(860px, calc(100% - 40px)); margin: 0 auto; padding: 72px 0 80px; }
+    .eyebrow { margin: 0 0 10px; color: var(--accent); font-size: .82rem; font-weight: 750; letter-spacing: .1em; text-transform: uppercase; }
+    h1 { max-width: 780px; margin: 0; font-size: clamp(2.35rem, 7vw, 4.7rem); line-height: 1.02; letter-spacing: -.045em; }
+    .lead { max-width: 720px; margin: 28px 0 0; color: var(--muted); font-size: 1.2rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 32px 0 0; }
+    .actions a { display: inline-block; padding: 11px 16px; border: 1px solid var(--line); border-radius: 9px; color: var(--ink); font-weight: 700; text-decoration: none; }
+    .actions a:first-child { border-color: var(--accent); color: #fff; background: var(--accent); }
+    section { margin-top: 64px; }
+    h2 { margin: 0 0 16px; font-size: 1.55rem; letter-spacing: -.02em; }
+    ul { padding-left: 22px; }
+    li + li { margin-top: 8px; }
+    .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 38px; }
+    .fact { padding: 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--soft); }
+    .fact strong { display: block; font-size: 1.55rem; }
+    .fact span { color: var(--muted); font-size: .92rem; }
+    .notice { padding: 22px; border-left: 4px solid var(--accent); background: var(--soft); }
+    a { color: var(--accent); }
+    footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: .92rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Open synthetic reference dataset</p>
+    <h1>FISCUS AI Financial Workflow State Fixtures</h1>
+    <p class="lead">A compact set of hand-authored scenarios for testing finance-critical state transitions without confusing an AI suggestion, a human approval, a provider response, and a committed accounting effect.</p>
+
+    <div class="actions">
+      <a href="https://fiscusai.org/">Visit FISCUS AI</a>
+      <a href="data/financial_workflow_state_fixtures.jsonl">Download the JSONL dataset</a>
+      <a href="https://github.com/hakkiyuvanc/fiscus-ai-financial-workflow-fixtures">View the GitHub repository</a>
+    </div>
+
+    <div class="facts" aria-label="Dataset summary">
+      <div class="fact"><strong>25</strong><span>synthetic JSONL records</span></div>
+      <div class="fact"><strong>0</strong><span>real customer or banking records</span></div>
+      <div class="fact"><strong>CC BY 4.0</strong><span>declared dataset licence</span></div>
+    </div>
+
+    <section>
+      <h2>What the fixtures exercise</h2>
+      <ul>
+        <li>deterministic transition guards and human approvals;</li>
+        <li>provider uncertainty, retries, idempotency, and reversals;</li>
+        <li>bank reconciliation, invoices, e-documents, expenses, collections, exchange rates, ledger workflows, and organization authorization;</li>
+        <li>reconstructible audit events and user-visible status aligned with source-of-truth state.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Controlled-automation principles</h2>
+      <ul>
+        <li>An AI recommendation is decision support, not a committed accounting fact.</li>
+        <li>Approval does not prove that an external financial operation was committed.</li>
+        <li>An unavailable provider result is unknown and must not be presented as a negative result.</li>
+        <li>Retries must not duplicate committed financial effects.</li>
+        <li>Reversals and corrections remain explicit, auditable state transitions.</li>
+      </ul>
+    </section>
+
+    <section class="notice" aria-label="Responsible use notice">
+      <strong>Responsible use.</strong> These records are illustrative test fixtures, not production-ready workflows and not accounting, tax, legal, or investment advice. They contain no real customer data, bank data, invoice or taxpayer identifiers, production model output, provider secrets, or live accounting records.
+    </section>
+
+    <section>
+      <h2>Independent public records</h2>
+      <ul>
+        <li><a href="https://doi.org/10.5281/zenodo.23269165">Zenodo DOI archive</a></li>
+        <li><a href="https://huggingface.co/datasets/keaxe21/fiscus-financial-workflow-state-fixtures">Hugging Face dataset</a></li>
+        <li><a href="https://www.kaggle.com/datasets/hakkiyuvanc/fiscus-ai-financial-workflow-state-fixtures">Kaggle dataset</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      Published as an open reference artifact for <a href="https://fiscusai.org/">FISCUS AI</a>, an AI-supported financial operating system for Turkish SMEs.
+    </footer>
+  </main>
+</body>
+</html>
